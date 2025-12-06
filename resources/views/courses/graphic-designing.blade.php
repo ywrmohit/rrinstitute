@@ -1,9 +1,18 @@
-@extends('layouts.app')
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphic Designing Course - RR Institute (Prime Course)</title>
+    <meta name="description" content="Unleash your creativity with our Prime Graphic Designing course. Master Photoshop, Illustrator, InDesign, and CorelDraw. Become a pro designer.">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased font-sans">
+    
+    <x-announcement-bar />
+    <x-navbar />
 
-@section('title', 'Graphic Designing Course - RR Institute (Prime Course)')
-@section('meta_description', 'Unleash your creativity with our Prime Graphic Designing course. Master Photoshop, Illustrator, InDesign, and CorelDraw. Become a pro designer.')
-
-@section('content')
     <!-- Hero Section -->
     <div class="relative pt-32 pb-20 md:pt-40 md:pb-32 bg-gradient-to-br from-pink-50 to-orange-50 overflow-hidden">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -159,4 +168,8 @@
             <a href="{{ route('contact') }}" class="inline-block bg-white text-pink-600 px-8 py-3 rounded-full font-bold hover:bg-gray-100 transition-colors">Enroll Now</a>
         </div>
     </section>
-@endsection
+
+    <x-footer />
+    <x-whatsapp-float />
+</body>
+</html>

@@ -1,5 +1,5 @@
 <!-- Top Notification Bar -->
-<div id="announcement-bar" class="fixed top-0 w-full bg-gradient-to-r from-green-600 via-emerald-600 to-green-600 text-white py-1.5 overflow-hidden z-50 transition-transform duration-300">
+<div id="announcement-bar" class="relative w-full bg-gradient-to-r from-green-600 via-emerald-600 to-green-600 text-white py-1.5 overflow-hidden z-50 transition-transform duration-300">
     <div class="flex items-center justify-center gap-8 animate-scroll-left text-sm">
         <!-- Notification 1 -->
         <div class="flex items-center gap-2 whitespace-nowrap">

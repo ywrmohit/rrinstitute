@@ -1,9 +1,18 @@
-@extends('layouts.app')
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tally & Accounting Course - RR Institute</title>
+    <meta name="description" content="Become an accounting professional with our Tally & Accounting course. Learn GST, taxation, and financial management.">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased font-sans">
+    
+    <x-announcement-bar />
+    <x-navbar />
 
-@section('title', 'Tally & Accounting Course - RR Institute')
-@section('meta_description', 'Become an accounting professional with our Tally & Accounting course. Learn GST, taxation, and financial management.')
-
-@section('content')
     <!-- Hero Section -->
     <div class="relative pt-32 pb-20 md:pt-40 md:pb-32 bg-blue-50 overflow-hidden">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -96,4 +105,8 @@
             <a href="{{ route('contact') }}" class="inline-block bg-white text-blue-700 px-8 py-3 rounded-full font-bold hover:bg-gray-100 transition-colors">Enroll Now</a>
         </div>
     </section>
-@endsection
+
+    <x-footer />
+    <x-whatsapp-float />
+</body>
+</html>

@@ -1,9 +1,18 @@
-@extends('layouts.app')
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visa Services - RR Institute</title>
+    <meta name="description" content="Expert visa consultancy services for student visas, tourist visas, and work permits. Your trusted partner for global opportunities.">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
+</head>
+<body class="bg-white text-gray-800 antialiased font-sans">
+    
+    <x-announcement-bar />
+    <x-navbar />
 
-@section('title', 'Visa Services - RR Institute')
-@section('meta_description', 'Expert visa consultancy services for student visas, tourist visas, and work permits. Your trusted partner for global opportunities.')
-
-@section('content')
     <!-- Hero Section -->
     <div class="relative bg-emerald-900 pt-32 pb-20 md:pt-40 md:pb-32 overflow-hidden">
         <div class="absolute inset-0">
@@ -216,4 +225,8 @@
             </a>
         </div>
     </div>
-@endsection
+
+    <x-footer />
+    <x-whatsapp-float />
+</body>
+</html>

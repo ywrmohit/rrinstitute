@@ -1,9 +1,21 @@
-@extends('layouts.app')
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - RR Institute Karnal</title>
+    <meta name="description" content="Get in touch with RR Institute. Visit our office in Karnal, call us, or send us a message. We are here to help you start your learning journey.">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased">
 
-@section('title', 'Contact Us - RR Institute Karnal')
-@section('meta_description', 'Get in touch with RR Institute. Visit our office in Karnal, call us, or send us a message. We are here to help you start your learning journey.')
+    <!-- Announcement Bar -->
+    <x-announcement-bar />
 
-@section('content')
+    <!-- Navbar -->
+    <x-navbar />
+
     <!-- Hero Section -->
     <div class="relative pt-32 pb-16 md:pt-40 md:pb-20 bg-gradient-to-br from-green-50 via-white to-emerald-50 overflow-hidden">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -44,7 +56,7 @@
                     </div>
                     <h3 class="text-xl font-bold text-gray-900 mb-2">Email Us</h3>
                     <p class="text-gray-600 text-sm mb-3">We'll respond within 24 hours</p>
-                    <a href="mailto:info@rrinstitute.co.in" class="text-blue-600 font-semibold hover:text-blue-700 break-all">info@rrinstitute.co.in</a>
+                    <a href="mailto:visualtenx@gmail.com" class="text-blue-600 font-semibold hover:text-blue-700 break-all">info@rrinstitute.co.in</a>
                 </div>
 
                 <!-- Location -->
@@ -72,7 +84,13 @@
                     <h2 class="text-3xl font-bold text-gray-900 mb-6">Send Us a Message</h2>
                     <p class="text-gray-600 mb-8">Fill out the form below and we'll get back to you as soon as possible.</p>
                     
-                    <form action="#" method="POST" class="space-y-6">
+                    @if(session('success'))
+                        <div class="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative mb-4">
+                            {{ session('success') }}
+                        </div>
+                    @endif
+
+                    <form action="{{ route('enquiries.store') }}" method="POST" class="space-y-6">
                         @csrf
                         <!-- Name -->
                         <div>
@@ -137,7 +155,7 @@
                         <h3 class="text-2xl font-bold text-gray-900 mb-4">Find Us on Map</h3>
                         <div class="rounded-2xl overflow-hidden shadow-lg h-80 border border-gray-200">
                             <iframe 
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3475.8!2d76.9847!3d29.6857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjnCsDQxJzA4LjUiTiA3NsKwNTknMDQuOSJF!5e0!3m2!1sen!2sin!4v1234567890"
+                                src="https://maps.google.com/maps?q=RR+Institute,+Sco-24,+2nd+Floor,+Behind+old+bus+stand,+Karnal&t=&z=15&ie=UTF8&iwloc=&output=embed"
                                 width="100%" 
                                 height="100%" 
                                 style="border:0;" 
@@ -159,15 +177,15 @@
                         <div class="space-y-2 text-gray-700">
                             <div class="flex justify-between">
                                 <span class="font-medium">Monday - Friday</span>
-                                <span>9:00 AM - 7:00 PM</span>
+                                <span class="text-gray-600">9:00 AM - 7:00 PM</span>
                             </div>
                             <div class="flex justify-between">
                                 <span class="font-medium">Saturday</span>
-                                <span>9:00 AM - 6:00 PM</span>
+                                <span class="text-gray-600">9:00 AM - 6:00 PM</span>
                             </div>
                             <div class="flex justify-between">
                                 <span class="font-medium">Sunday</span>
-                                <span class="text-red-600">Closed</span>
+                                <span class="text-red-500 font-medium">Closed</span>
                             </div>
                         </div>
                     </div>
@@ -236,4 +254,12 @@
             </div>
         </div>
     </section>
-@endsection
+
+    <!-- Footer -->
+    <x-footer />
+    
+    <!-- WhatsApp Floating Button -->
+    <x-whatsapp-float />
+
+</body>
+</html>

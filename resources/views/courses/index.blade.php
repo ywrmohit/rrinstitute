@@ -1,9 +1,18 @@
-@extends('layouts.app')
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Computer Courses - RR Institute</title>
+    <meta name="description" content="Explore all computer courses at RR Institute. From Basics to Advanced - Graphic Designing, Web Development, Programming, Tally & Accounting.">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased font-sans">
+    
+    <x-announcement-bar />
+    <x-navbar />
 
-@section('title', 'All Computer Courses - RR Institute')
-@section('meta_description', 'Explore all computer courses at RR Institute. From Basics to Advanced - Graphic Designing, Web Development, Programming, Tally & Accounting.')
-
-@section('content')
     <!-- Hero Section -->
     <div class="relative pt-32 pb-16 md:pt-40 md:pb-20 bg-gradient-to-br from-green-50 via-blue-50 to-purple-50 overflow-hidden">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -30,90 +39,110 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 
                 <!-- Graphic Designing (Prime Course) - Featured -->
-                <a href="{{ route('courses.graphic-designing') }}" class="lg:col-span-2 group rounded-2xl overflow-hidden border-2 border-pink-200 hover:shadow-2xl transition-all duration-300 relative bg-gradient-to-br from-pink-50 to-orange-50">
-                    <div class="absolute top-6 left-6 bg-gradient-to-r from-pink-600 to-orange-600 text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg z-10">⭐ PRIME COURSE - Most Popular</div>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 p-8">
-                        <div class="relative h-64 md:h-full overflow-hidden rounded-xl">
-                            <img src="{{ asset('images/graphic_design_hero.png') }}" alt="Graphic Designing" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                <div class="lg:col-span-2 group rounded-2xl overflow-hidden border-2 border-pink-200 hover:shadow-2xl transition-all duration-300 relative bg-gradient-to-br from-pink-50 to-orange-50 flex flex-col">
+                    <a href="{{ route('courses.graphic-designing') }}" class="block flex-grow">
+                        <div class="absolute top-6 left-6 bg-gradient-to-r from-pink-600 to-orange-600 text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg z-10">⭐ PRIME COURSE - Most Popular</div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 p-8 pb-0">
+                            <div class="relative h-64 md:h-full overflow-hidden rounded-xl">
+                                <img src="{{ asset('images/graphic_design_hero.png') }}" alt="Graphic Designing" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                            </div>
+                            <div class="flex flex-col justify-center">
+                                <h3 class="text-3xl font-bold text-gray-900 mb-4 group-hover:text-pink-600 transition-colors">Graphic Designing</h3>
+                                <p class="text-gray-700 mb-4 leading-relaxed">Master Photoshop, Illustrator, InDesign, and CorelDraw. Our flagship course for creative professionals.</p>
+                                <div class="flex items-center gap-4 mb-4">
+                                    <span class="bg-pink-100 text-pink-700 px-3 py-1 rounded-full text-sm font-semibold">6 Months</span>
+                                    <span class="text-gray-600 text-sm">4 Professional Tools</span>
+                                </div>
+                            </div>
                         </div>
-                        <div class="flex flex-col justify-center">
-                            <h3 class="text-3xl font-bold text-gray-900 mb-4 group-hover:text-pink-600 transition-colors">Graphic Designing</h3>
-                            <p class="text-gray-700 mb-4 leading-relaxed">Master Photoshop, Illustrator, InDesign, and CorelDraw. Our flagship course for creative professionals.</p>
-                            <div class="flex items-center gap-4 mb-4">
-                                <span class="bg-pink-100 text-pink-700 px-3 py-1 rounded-full text-sm font-semibold">6 Months</span>
-                                <span class="text-gray-600 text-sm">4 Professional Tools</span>
-                            </div>
-                            <div class="flex items-center justify-between">
-                                <span class="text-2xl font-bold text-gray-900">Contact Us</span>
-                                <span class="text-pink-600 font-medium">Learn More →</span>
-                            </div>
+                    </a>
+                    <div class="p-8 pt-4 mt-auto">
+                        <div class="flex items-center justify-between">
+                            <a href="{{ route('contact') }}" class="text-2xl font-bold text-gray-900 hover:text-pink-600 transition-colors">Contact Us</a>
+                            <a href="{{ route('courses.graphic-designing') }}" class="text-pink-600 font-medium hover:underline">Learn More →</a>
                         </div>
                     </div>
-                </a>
+                </div>
 
                 <!-- Web Development -->
-                <a href="{{ route('courses.web-development') }}" class="group rounded-2xl overflow-hidden border border-gray-100 hover:shadow-2xl transition-all duration-300">
-                    <div class="relative h-56 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80" alt="Web Development" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
-                        <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-bold text-purple-600 shadow-sm">6 Months</div>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-2xl font-bold text-gray-900 mb-3 group-hover:text-purple-600 transition-colors">Web Development</h3>
-                        <p class="text-gray-600 mb-4 leading-relaxed">Choose MERN Stack or PHP Laravel. Build modern, responsive websites.</p>
+                <div class="group rounded-2xl overflow-hidden border border-gray-100 hover:shadow-2xl transition-all duration-300 flex flex-col">
+                    <a href="{{ route('courses.web-development') }}" class="block flex-grow">
+                        <div class="relative h-56 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80" alt="Web Development" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                            <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-bold text-purple-600 shadow-sm">6 Months</div>
+                        </div>
+                        <div class="p-6 pb-0">
+                            <h3 class="text-2xl font-bold text-gray-900 mb-3 group-hover:text-purple-600 transition-colors">Web Development</h3>
+                            <p class="text-gray-600 mb-4 leading-relaxed">Choose MERN Stack or PHP Laravel. Build modern, responsive websites.</p>
+                        </div>
+                    </a>
+                    <div class="p-6 pt-0 mt-auto">
                         <div class="flex items-center justify-between pt-4 border-t border-gray-50">
-                            <span class="text-lg font-bold text-gray-900">Contact Us</span>
-                            <span class="text-purple-600 font-medium">Learn More →</span>
+                            <a href="{{ route('contact') }}" class="text-lg font-bold text-gray-900 hover:text-purple-600 transition-colors">Contact Us</a>
+                            <a href="{{ route('courses.web-development') }}" class="text-purple-600 font-medium hover:underline">Learn More →</a>
                         </div>
                     </div>
-                </a>
+                </div>
 
                 <!-- Tally & Accounting -->
-                <a href="{{ route('courses.tally') }}" class="group rounded-2xl overflow-hidden border border-gray-100 hover:shadow-2xl transition-all duration-300">
-                    <div class="relative h-56 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=800&q=80" alt="Tally & Accounting" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
-                        <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-bold text-blue-600 shadow-sm">3 Months</div>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-2xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors">Tally & Accounting</h3>
-                        <p class="text-gray-600 mb-4 leading-relaxed">Master Tally Prime with GST. Perfect for aspiring accountants.</p>
+                <div class="group rounded-2xl overflow-hidden border border-gray-100 hover:shadow-2xl transition-all duration-300 flex flex-col">
+                    <a href="{{ route('courses.tally') }}" class="block flex-grow">
+                        <div class="relative h-56 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=800&q=80" alt="Tally & Accounting" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                            <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-bold text-blue-600 shadow-sm">3 Months</div>
+                        </div>
+                        <div class="p-6 pb-0">
+                            <h3 class="text-2xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors">Tally & Accounting</h3>
+                            <p class="text-gray-600 mb-4 leading-relaxed">Master Tally Prime with GST. Perfect for aspiring accountants.</p>
+                        </div>
+                    </a>
+                    <div class="p-6 pt-0 mt-auto">
                         <div class="flex items-center justify-between pt-4 border-t border-gray-50">
-                            <span class="text-lg font-bold text-gray-900">Contact Us</span>
-                            <span class="text-blue-600 font-medium">Learn More →</span>
+                            <a href="{{ route('contact') }}" class="text-lg font-bold text-gray-900 hover:text-blue-600 transition-colors">Contact Us</a>
+                            <a href="{{ route('courses.tally') }}" class="text-blue-600 font-medium hover:underline">Learn More →</a>
                         </div>
                     </div>
-                </a>
+                </div>
 
                 <!-- C & C++ Programming -->
-                <a href="{{ route('courses.programming') }}" class="group rounded-2xl overflow-hidden border border-gray-100 hover:shadow-2xl transition-all duration-300">
-                    <div class="relative h-56 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=800&q=80" alt="C & C++ Programming" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
-                        <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-bold text-indigo-600 shadow-sm">4 Months</div>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-2xl font-bold text-gray-900 mb-3 group-hover:text-indigo-600 transition-colors">C & C++ Programming</h3>
-                        <p class="text-gray-600 mb-4 leading-relaxed">Build a strong programming foundation. Perfect for students.</p>
+                <div class="group rounded-2xl overflow-hidden border border-gray-100 hover:shadow-2xl transition-all duration-300 flex flex-col">
+                    <a href="{{ route('courses.programming') }}" class="block flex-grow">
+                        <div class="relative h-56 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=800&q=80" alt="C & C++ Programming" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                            <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-bold text-indigo-600 shadow-sm">4 Months</div>
+                        </div>
+                        <div class="p-6 pb-0">
+                            <h3 class="text-2xl font-bold text-gray-900 mb-3 group-hover:text-indigo-600 transition-colors">C & C++ Programming</h3>
+                            <p class="text-gray-600 mb-4 leading-relaxed">Build a strong programming foundation. Perfect for students.</p>
+                        </div>
+                    </a>
+                    <div class="p-6 pt-0 mt-auto">
                         <div class="flex items-center justify-between pt-4 border-t border-gray-50">
-                            <span class="text-lg font-bold text-gray-900">Contact Us</span>
-                            <span class="text-indigo-600 font-medium">Learn More →</span>
+                            <a href="{{ route('contact') }}" class="text-lg font-bold text-gray-900 hover:text-indigo-600 transition-colors">Contact Us</a>
+                            <a href="{{ route('courses.programming') }}" class="text-indigo-600 font-medium hover:underline">Learn More →</a>
                         </div>
                     </div>
-                </a>
+                </div>
 
                 <!-- Basics of Computer -->
-                <a href="{{ route('courses.basics') }}" class="group rounded-2xl overflow-hidden border border-gray-100 hover:shadow-2xl transition-all duration-300">
-                    <div class="relative h-56 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1496171367470-9ed9a91ea931?auto=format&fit=crop&w=800&q=80" alt="Basics of Computer" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
-                        <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-bold text-green-600 shadow-sm">2 Months</div>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-2xl font-bold text-gray-900 mb-3 group-hover:text-green-600 transition-colors">Basics of Computer</h3>
-                        <p class="text-gray-600 mb-4 leading-relaxed">Learn essential computer skills from scratch. Perfect for beginners.</p>
+                <div class="group rounded-2xl overflow-hidden border border-gray-100 hover:shadow-2xl transition-all duration-300 flex flex-col">
+                    <a href="{{ route('courses.basics') }}" class="block flex-grow">
+                        <div class="relative h-56 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1496171367470-9ed9a91ea931?auto=format&fit=crop&w=800&q=80" alt="Basics of Computer" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                            <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-bold text-green-600 shadow-sm">2 Months</div>
+                        </div>
+                        <div class="p-6 pb-0">
+                            <h3 class="text-2xl font-bold text-gray-900 mb-3 group-hover:text-green-600 transition-colors">Basics of Computer</h3>
+                            <p class="text-gray-600 mb-4 leading-relaxed">Learn essential computer skills from scratch. Perfect for beginners.</p>
+                        </div>
+                    </a>
+                    <div class="p-6 pt-0 mt-auto">
                         <div class="flex items-center justify-between pt-4 border-t border-gray-50">
-                            <span class="text-lg font-bold text-gray-900">Contact Us</span>
-                            <span class="text-green-600 font-medium">Learn More →</span>
+                            <a href="{{ route('contact') }}" class="text-lg font-bold text-gray-900 hover:text-green-600 transition-colors">Contact Us</a>
+                            <a href="{{ route('courses.basics') }}" class="text-green-600 font-medium hover:underline">Learn More →</a>
                         </div>
                     </div>
-                </a>
+                </div>
 
             </div>
         </div>
@@ -146,7 +175,7 @@
 
                 <div class="bg-white p-8 rounded-2xl shadow-sm text-center">
                     <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                        <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path></svg>
+                        <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path></svg>
                     </div>
                     <h3 class="text-xl font-bold text-gray-900 mb-3">Certification</h3>
                     <p class="text-gray-600">Industry-recognized certificates upon successful course completion.</p>
@@ -160,7 +189,11 @@
         <div class="max-w-4xl mx-auto px-4">
             <h2 class="text-3xl font-bold mb-6">Ready to Start Your Learning Journey?</h2>
             <p class="text-xl mb-8 text-green-100">Enroll now and take the first step towards your dream career.</p>
-            <a href="#" class="inline-block bg-white text-green-700 px-8 py-3 rounded-full font-bold hover:bg-gray-100 transition-colors">Contact Us Today</a>
+            <a href="{{ route('contact') }}" class="inline-block bg-white text-green-700 px-8 py-3 rounded-full font-bold hover:bg-gray-100 transition-colors">Contact Us Today</a>
         </div>
     </section>
-@endsection
+
+    <x-footer />
+    <x-whatsapp-float />
+</body>
+</html>

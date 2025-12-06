@@ -1,5 +1,5 @@
 <!-- WhatsApp Floating Button -->
-<div class="fixed bottom-6 right-6 z-50 group">
+<div class="fixed bottom-20 right-4 md:bottom-8 md:right-6 z-50 group">
     <!-- Tooltip -->
     <div class="absolute right-20 bottom-2 bg-white px-4 py-2 rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 whitespace-nowrap">
         <p class="text-sm font-semibold text-gray-900">Need Help? Chat with us!</p>

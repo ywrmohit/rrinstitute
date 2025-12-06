@@ -1,9 +1,18 @@
-@extends('layouts.app')
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - RR Institute Karnal</title>
+    <meta name="description" content="Learn about RR Institute, a leading computer training and visa consultancy center in Karnal, Haryana. Expert faculty, modern infrastructure, and proven track record.">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased font-sans">
+    
+    <x-announcement-bar />
+    <x-navbar />
 
-@section('title', 'About Us - RR Institute Karnal')
-@section('meta_description', 'Learn about RR Institute, a leading computer training and visa consultancy center in Karnal, Haryana. Expert faculty, modern infrastructure, and proven track record.')
-
-@section('content')
     <!-- Hero Section -->
     <div class="relative pt-32 pb-16 md:pt-40 md:pb-20 bg-gradient-to-br from-green-50 via-white to-emerald-50 overflow-hidden">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -170,7 +179,7 @@
                 <a href="tel:+919034760900" class="inline-block bg-white text-green-700 px-8 py-3 rounded-full font-bold hover:bg-gray-100 transition-colors">
                     📞 Call: +91 90347 60900
                 </a>
-                <a href="#" class="inline-block bg-transparent border-2 border-white text-white px-8 py-3 rounded-full font-bold hover:bg-white hover:text-green-700 transition-colors">
+                <a href="https://maps.app.goo.gl/gK911UcQYE7JqUYSA" target="_blank" class="inline-block bg-transparent border-2 border-white text-white px-8 py-3 rounded-full font-bold hover:bg-white hover:text-green-700 transition-colors">
                     Visit Our Campus
                 </a>
             </div>
@@ -179,4 +188,8 @@
             </p>
         </div>
     </section>
-@endsection
+
+    <x-footer />
+    <x-whatsapp-float />
+</body>
+</html>

@@ -1,2 +1,76 @@
+# robots.txt for RR Institute
+
+# Allow all search engines to crawl the site
 User-agent: *
-Disallow:
+Allow: /
+
+# Disallow admin and authentication pages
+Disallow: /login
+Disallow: /register
+Disallow: /password/
+Disallow: /dashboard
+Disallow: /institute/
+Disallow: /student/
+Disallow: /profile/
+Disallow: /admin/
+
+# Disallow API endpoints
+Disallow: /api/
+
+# Disallow private directories
+Disallow: /storage/
+Disallow: /vendor/
+
+# Allow CSS, JS, and images
+Allow: /css/
+Allow: /js/
+Allow: /images/
+Allow: /build/
+
+# Sitemap location
+Sitemap: https://www.rrinstitute.co.in/sitemap.xml
+
+# Crawl-delay (optional - helps prevent server overload)
+Crawl-delay: 1
+
+# Specific rules for major search engines
+
+# Google
+User-agent: Googlebot
+Allow: /
+Disallow: /login
+Disallow: /register
+Disallow: /dashboard
+Disallow: /institute/
+Disallow: /student/
+
+# Bing
+User-agent: Bingbot
+Allow: /
+Disallow: /login
+Disallow: /register
+Disallow: /dashboard
+Disallow: /institute/
+Disallow: /student/
+
+# Yahoo
+User-agent: Slurp
+Allow: /
+Disallow: /login
+Disallow: /register
+Disallow: /dashboard
+Disallow: /institute/
+Disallow: /student/
+
+# Block bad bots (optional)
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /

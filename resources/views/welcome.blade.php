@@ -41,6 +41,9 @@
     <!-- Reviews Section -->
     <x-reviews />
 
+    <!-- FAQ Section -->
+    <x-faq />
+
     <!-- CTA Section -->
 
     <x-cta />

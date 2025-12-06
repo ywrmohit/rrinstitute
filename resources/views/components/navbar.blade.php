@@ -1,4 +1,4 @@
-<nav class="fixed w-full z-40 glass-nav transition-all duration-300 navbar-scroll" id="navbar">
+<nav class="sticky top-0 w-full z-50 bg-white/80 backdrop-blur-lg border-b border-gray-100 transition-all duration-300" id="navbar">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between items-center h-20">
             <!-- Logo -->

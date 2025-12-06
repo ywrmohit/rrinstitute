@@ -1,59 +1,311 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# 🎓 RR Institute - Computer Training & Visa Consultancy Platform
 
 <p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+  <img src="public/images/rr-logo.png" alt="RR Institute Logo" width="200"/>
 </p>
 
-## About Laravel
+<p align="center">
+  <strong>Empowering Your Future Global Career</strong>
+</p>
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+<p align="center">
+  A comprehensive web platform for computer education and visa consultancy services, built with Laravel and modern web technologies.
+</p>
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+<p align="center">
+  <img src="https://img.shields.io/badge/Laravel-11.x-FF2D20?style=for-the-badge&logo=laravel&logoColor=white" alt="Laravel"/>
+  <img src="https://img.shields.io/badge/PHP-8.2+-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="PHP"/>
+  <img src="https://img.shields.io/badge/TailwindCSS-3.x-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind CSS"/>
+  <img src="https://img.shields.io/badge/Alpine.js-3.x-8BC0D0?style=for-the-badge&logo=alpine.js&logoColor=white" alt="Alpine.js"/>
+</p>
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+---
 
-## Learning Laravel
+## 📋 Table of Contents
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+- [About](#about)
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Installation](#installation)
+- [Configuration](#configuration)
+- [Usage](#usage)
+- [Screenshots](#screenshots)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+---
 
-## Laravel Sponsors
+## 🎯 About
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+**RR Institute** is a premier educational institution based in Karnal, Haryana, dedicated to bridging the gap between academic learning and industry requirements. This web platform serves as the digital presence for:
 
-### Premium Partners
+- **Computer Training Courses**: Graphic Design, Web Development, Tally & Accounting, Programming, and more
+- **Visa Consultancy Services**: Expert guidance for study and work visa applications globally
+- **Student Management**: Comprehensive dashboard for institute administration
+- **Enquiry Management**: Streamlined lead tracking and follow-up system
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+---
 
-## Contributing
+## ✨ Features
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+### 🌐 Public Website
+- **Modern Landing Page** with hero slider and dynamic sections
+- **Course Catalog** with detailed course pages for each program
+- **Student Reviews Carousel** with authentic testimonials
+- **Interactive FAQ Section** with accordion design
+- **Contact Form** with enquiry management
+- **Visa Services Overview** page
+- **About Us** page with institute information
+- **Legal Pages**: Privacy Policy, Terms & Conditions, Refund Policy
 
-## Code of Conduct
+### 🎨 Design & UX
+- **Responsive Design** - Mobile-first approach with Tailwind CSS
+- **Modern Aesthetics** - Glassmorphism, gradients, and smooth animations
+- **Interactive Components** - Alpine.js powered carousels and accordions
+- **WhatsApp Integration** - Floating chat button for instant communication
+- **Optimized Performance** - Fast loading times and smooth transitions
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+### 🔐 Authentication & Authorization
+- **Role-Based Access Control** (Institute Admin & Student roles)
+- **Secure Authentication** with Laravel Breeze
+- **Email Verification** system
+- **Password Reset** functionality
 
-## Security Vulnerabilities
+### 📊 Institute Dashboard
+- **Statistics Overview** - Total students, enquiries, and new leads
+- **Enquiry Management** - View, update status, and delete enquiries
+- **Student Management** - CRUD operations for student records
+- **Sidebar Navigation** - Clean, modern interface with active states
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+### 📧 Communication
+- **Contact Form** with email notifications
+- **Enquiry System** with status tracking
+- **WhatsApp Integration** for instant messaging
 
-## License
+---
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## 🛠️ Tech Stack
+
+### Backend
+- **Framework**: Laravel 11.x
+- **Language**: PHP 8.2+
+- **Database**: MySQL
+- **Authentication**: Laravel Breeze
+
+### Frontend
+- **CSS Framework**: Tailwind CSS 3.x
+- **JavaScript**: Alpine.js 3.x
+- **Build Tool**: Vite
+- **Template Engine**: Blade
+
+### Additional Tools
+- **Version Control**: Git
+- **Package Manager**: Composer, NPM
+- **Development Server**: Laravel Herd / Valet
+
+---
+
+## 🚀 Installation
+
+### Prerequisites
+- PHP >= 8.2
+- Composer
+- Node.js & NPM
+- MySQL Database
+
+### Step-by-Step Setup
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/yourusername/rrinstitute.git
+   cd rrinstitute
+   ```
+
+2. **Install PHP dependencies**
+   ```bash
+   composer install
+   ```
+
+3. **Install NPM dependencies**
+   ```bash
+   npm install
+   ```
+
+4. **Create environment file**
+   ```bash
+   cp .env.example .env
+   ```
+
+5. **Generate application key**
+   ```bash
+   php artisan key:generate
+   ```
+
+6. **Configure database**
+   
+   Edit `.env` file with your database credentials:
+   ```env
+   DB_CONNECTION=mysql
+   DB_HOST=127.0.0.1
+   DB_PORT=3306
+   DB_DATABASE=your_database_name
+   DB_USERNAME=your_database_user
+   DB_PASSWORD=your_database_password
+   ```
+
+7. **Run migrations**
+   ```bash
+   php artisan migrate
+   ```
+
+8. **Seed the database (optional)**
+   ```bash
+   php artisan db:seed
+   ```
+
+9. **Build assets**
+   ```bash
+   npm run build
+   ```
+
+10. **Start development server**
+    ```bash
+    php artisan serve
+    ```
+
+11. **Access the application**
+    
+    Open your browser and visit: `http://localhost:8000`
+
+---
+
+## ⚙️ Configuration
+
+### Mail Configuration
+
+Configure email settings in `.env` for contact form notifications:
+
+```env
+MAIL_MAILER=smtp
+MAIL_HOST=your_smtp_host
+MAIL_PORT=587
+MAIL_USERNAME=your_email@example.com
+MAIL_PASSWORD=your_app_password
+MAIL_ENCRYPTION=tls
+MAIL_FROM_ADDRESS=your_email@example.com
+MAIL_FROM_NAME="${APP_NAME}"
+```
+
+### Creating Admin User
+
+To create an institute admin account:
+
+```bash
+php artisan tinker
+```
+
+Then run:
+```php
+$user = new App\Models\User();
+$user->name = 'Admin Name';
+$user->email = 'admin@example.com';
+$user->password = bcrypt('your_secure_password');
+$user->role = 'institute';
+$user->email_verified_at = now();
+$user->save();
+```
+
+---
+
+## 📖 Usage
+
+### Public Pages
+- **Homepage**: `/`
+- **All Courses**: `/courses`
+- **Individual Course**: `/courses/{course-slug}`
+- **About Us**: `/about`
+- **Contact**: `/contact`
+- **Visa Services**: `/visa-services`
+
+### Authentication
+- **Login**: `/login`
+- **Register**: `/register`
+- **Password Reset**: `/forgot-password`
+
+### Institute Dashboard
+- **Dashboard**: `/institute/dashboard` (Institute role required)
+- **Enquiries**: `/institute/enquiries`
+- **Students**: `/institute/students`
+
+### Student Dashboard
+- **Dashboard**: `/student/dashboard` (Student role required)
+
+---
+
+## 📸 Screenshots
+
+### Homepage
+![Homepage Hero](screenshots/homepage-hero.png)
+*Modern hero section with slider and call-to-action buttons*
+
+### Course Catalog
+![Course Catalog](screenshots/courses-page.png)
+*Comprehensive course listing with featured prime course*
+
+### Institute Dashboard
+![Institute Dashboard](screenshots/institute-dashboard.png)
+*Admin dashboard with statistics and recent enquiries*
+
+### Mobile Responsive
+![Mobile View](screenshots/mobile-view.png)
+*Fully responsive design for all devices*
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Please follow these steps:
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+## 📞 Contact
+
+**RR Institute**
+
+- 📍 Address: Karnal, Haryana, India
+- 📞 Phone: Contact via website
+- 📧 Email: Contact via website form
+- 🌐 Website: [Visit our website](#)
+- 💬 WhatsApp: Available on website
+
+---
+
+## 🙏 Acknowledgments
+
+- Laravel Framework Team
+- Tailwind CSS Team
+- Alpine.js Team
+- All contributors and supporters
+
+---
+
+<p align="center">
+  Made with ❤️ by RR Institute Team
+</p>
+
+<p align="center">
+  <a href="#top">⬆️ Back to Top</a>
+</p>

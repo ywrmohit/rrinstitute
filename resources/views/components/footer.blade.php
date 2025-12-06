@@ -69,8 +69,17 @@
             </div>
         </div>
 
-        <div class="border-t border-gray-800 pt-8 text-center text-gray-500 text-sm">
-            <p>&copy; 2024 RR Institute. All rights reserved.</p>
+        </div>
+
+        <div class="border-t border-gray-800 pt-8 px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-gray-500 text-sm">© 2024 RR Institute. All rights reserved.</p>
+                <div class="flex flex-wrap justify-center gap-6 text-sm">
+                    <a href="{{ route('privacy-policy') }}" class="text-gray-400 hover:text-green-500 transition-colors">Privacy Policy</a>
+                    <a href="{{ route('terms') }}" class="text-gray-400 hover:text-green-500 transition-colors">Terms & Conditions</a>
+                    <a href="{{ route('refund-policy') }}" class="text-gray-400 hover:text-green-500 transition-colors">Refund Policy</a>
+                </div>
+            </div>
         </div>
     </div>
 </footer>

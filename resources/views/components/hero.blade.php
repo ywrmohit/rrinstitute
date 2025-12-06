@@ -1,4 +1,4 @@
-<div class="relative pt-32 pb-20 md:pt-40 md:pb-32 bg-white overflow-hidden">
+<div class="relative pt-16 pb-16 md:pt-24 md:pb-24 bg-white overflow-hidden">
     <!-- Background Elements -->
     <div class="absolute top-0 left-0 w-full h-full overflow-hidden z-0">
         <div class="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-green-100 rounded-full mix-blend-multiply filter blur-3xl opacity-50 animate-blob"></div>

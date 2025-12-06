@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    
+    <!-- Homepage -->
+    <url>
+        <loc>https://www.rrinstitute.co.in/</loc>
+        <lastmod>2024-12-06</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    
+    <!-- About Us -->
+    <url>
+        <loc>https://www.rrinstitute.co.in/about</loc>
+        <lastmod>2024-12-06</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- Contact -->
+    <url>
+        <loc>https://www.rrinstitute.co.in/contact</loc>
+        <lastmod>2024-12-06</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- Visa Services -->
+    <url>
+        <loc>https://www.rrinstitute.co.in/visa-services</loc>
+        <lastmod>2024-12-06</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <!-- All Courses -->
+    <url>
+        <loc>https://www.rrinstitute.co.in/courses</loc>
+        <lastmod>2024-12-06</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <!-- Graphic Designing Course (Prime) -->
+    <url>
+        <loc>https://www.rrinstitute.co.in/courses/graphic-designing</loc>
+        <lastmod>2024-12-06</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    
+    <!-- Web Development Course -->
+    <url>
+        <loc>https://www.rrinstitute.co.in/courses/web-development</loc>
+        <lastmod>2024-12-06</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <!-- Tally & Accounting Course -->
+    <url>
+        <loc>https://www.rrinstitute.co.in/courses/tally-accounting</loc>
+        <lastmod>2024-12-06</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <!-- C & C++ Programming Course -->
+    <url>
+        <loc>https://www.rrinstitute.co.in/courses/c-cpp-programming</loc>
+        <lastmod>2024-12-06</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- Basics of Computer Course -->
+    <url>
+        <loc>https://www.rrinstitute.co.in/courses/basics-of-computer</loc>
+        <lastmod>2024-12-06</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- Legal Pages -->
+    <url>
+        <loc>https://www.rrinstitute.co.in/privacy-policy</loc>
+        <lastmod>2024-12-06</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+    
+    <url>
+        <loc>https://www.rrinstitute.co.in/terms</loc>
+        <lastmod>2024-12-06</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+    
+    <url>
+        <loc>https://www.rrinstitute.co.in/refund-policy</loc>
+        <lastmod>2024-12-06</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+    
+</urlset>

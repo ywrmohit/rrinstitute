@@ -25,7 +25,7 @@
                 </p>
                 
                 <div class="flex flex-col sm:flex-row gap-4">
-                    <a href="#" class="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-full text-white bg-green-600 hover:bg-green-700 shadow-lg hover:shadow-green-500/30 transition-all duration-300">
+                    <a href="{{ route('about') }}" class="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-full text-white bg-green-600 hover:bg-green-700 shadow-lg hover:shadow-green-500/30 transition-all duration-300">
                         Learn More About Us
                     </a>
                 </div>
