@@ -15,7 +15,9 @@ Route::get('/contact', function () {
     return view('contact');
 })->name('contact');
 
-Route::view('visa-services', 'visa-services')->name('visa-services');
+
+
+Route::view('/visa-services', 'visa-services')->name('visa-services');
 
 // Legal Pages
 Route::view('/privacy-policy', 'privacy-policy')->name('privacy-policy');

@@ -21,7 +21,7 @@
                     <a href="{{ route('courses.index') }}" class="px-8 py-4 bg-green-600 text-white rounded-full font-semibold text-lg hover:bg-green-700 transition-all shadow-lg hover:shadow-green-500/30 transform hover:-translate-y-1 text-center">
                         Explore Courses
                     </a>
-                    <a href="#" class="px-8 py-4 bg-white text-gray-700 border border-gray-200 rounded-full font-semibold text-lg hover:border-green-200 hover:bg-green-50 hover:text-green-700 transition-all shadow-sm hover:shadow-md text-center">
+                    <a href="{{ route('visa-services') }}" class="px-8 py-4 bg-white text-gray-700 border border-gray-200 rounded-full font-semibold text-lg hover:border-green-200 hover:bg-green-50 hover:text-green-700 transition-all shadow-sm hover:shadow-md text-center">
                         Visa Services
                     </a>
                 </div>

@@ -43,7 +43,7 @@
                         </svg>
                     </div>
                     <h3 class="text-xl font-bold text-gray-900 mb-2">Call Us</h3>
-                    <p class="text-gray-600 text-sm mb-3">Mon - Sat, 9 AM - 7 PM</p>
+                    <p class="text-gray-600 text-sm mb-3">Mon - Sat, 9 AM - 5 PM</p>
                     <a href="tel:+919034760900" class="text-green-600 font-semibold text-lg hover:text-green-700">+91 90347 60900</a>
                 </div>
 
@@ -177,14 +177,11 @@
                         <div class="space-y-2 text-gray-700">
                             <div class="flex justify-between">
                                 <span class="font-medium">Monday - Friday</span>
-                                <span class="text-gray-600">9:00 AM - 7:00 PM</span>
+                                <span class="text-gray-600">9:00 AM - 5:00 PM</span>
                             </div>
+                           
                             <div class="flex justify-between">
-                                <span class="font-medium">Saturday</span>
-                                <span class="text-gray-600">9:00 AM - 6:00 PM</span>
-                            </div>
-                            <div class="flex justify-between">
-                                <span class="font-medium">Sunday</span>
+                                <span class="font-medium">Saturday - Sunday</span>
                                 <span class="text-red-500 font-medium">Closed</span>
                             </div>
                         </div>
